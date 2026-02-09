@@ -1,9 +1,9 @@
 services:
   uptime-kuma:
-    image: louislam/uptime-kuma:2
+    build: .
     restart: unless-stopped
     volumes:
       - ./data:/app/data
-    ports:
-      # <Host Port>:<Container Port>
-      - "3001:3001"
+    network_mode: "host"
+    environment:
+      - NODE_OPTIONS=--dns-result-order=ipv4first

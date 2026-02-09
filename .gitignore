@@ -24,3 +24,33 @@ extra/exe-builder/obj
 
 .vs
 .vscode
+# Dependencies
+node_modules/
+
+# Build output
+dist/
+build/
+
+# Env / secrets
+.env
+.env.*
+config.js
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+pnpm-debug.log*
+*.log
+
+# Vue / Vite cache
+.vite/
+.cache/
+
+# OS / editor junk
+.DS_Store
+.idea/
+.vscode/
+
+# Local databases / dumps
+*.db
+backup.dump
